@@ -1,0 +1,124 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(15,15,15)
+}
+.heading h1{
+    color:white;
+    font-size: 48px;
+    font-weight:900;
+    letter-spacing: 1px;
+    padding-top:2rem;
+    text-align: center;
+    text-shadow: 3px 6px rgba(50,50,70,0.7);
+}
+.heading h4{
+    color:white;
+    text-align: center;
+}
+.searchBox{
+    text-align: center;
+    margin:3rem;
+   
+}
+.search-bar{
+    width:400px;
+    height:40px;
+    border:none;
+    outline:none;
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+}
+.notSearch{
+    font-size: 35px;
+    color:white;
+    font-weight:900;
+}
+.container{
+    width:80%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    width:300px;
+    height:400px;
+    margin:1.5rem;
+    background: linear-gradient(to left,rgb(204, 255, 51,0.5),to left,rgb(255, 255, 255,0.9));
+    border-radius: 8px;
+    box-shadow: 0 7px 12px rgb(204, 255, 51,0.5);
+    box-sizing: border-box;
+    overflow: auto;
+    position:relative;
+}
+.card img{
+    width:100%;
+}
+.card .info{
+    color:white;  
+    text-align: center;
+  }
+ 
+  .card .info h2{
+      margin:0;
+      font-weight: 900;
+      margin-top: 15px;
+  }
+  .card .info p{
+    margin: 0;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+.card:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    height:0;
+    width:100%;
+    background: linear-gradient(to bottom,rgb(204, 255, 51,0.7),rgb(204, 255, 51,0.9));
+    transition:0.2s All;
+}
+.card:hover:before{
+    height: 100%;  
+   
+}
+.card:hover{
+    background: linear-gradient(to bottom,rgb(204, 255, 51,0.7),rgb(204, 255, 51,0.9));  
+}
+.card .recipe{
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: justify;
+    padding: 0.5rem 1rem;
+    display: none;
+    transition: 0.3s all;
+}
+.card:hover .recipe{
+    display:block;
+}
+.recipe h2{
+    margin-bottom:10px;
+}
+.recipe img{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.recipe p{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.recipe a{   
+    display: block;
+    text-align: center;
+}
